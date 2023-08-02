@@ -1,0 +1,163 @@
+@font-face { font-family: 'Swipe Race Demo'; src: url('font/SwipeRaceDemo.ttf'); }
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-image: linear-gradient(#fcdbd7, #db3b28);
+}
+.container{
+    width: 100%;
+    min-height: 657px;
+    background-image: url(img/yamaha.png), url(img/r6.png);
+    background-position: 4% 27%, 100% 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: auto, 61%;
+}
+.navbar {
+    overflow: hidden;
+    padding: 20px 70px;
+    background-color: #fad4d0;
+    box-shadow: 0 1px 20px 0 rgba(124, 124, 124, 0.2)
+}
+.title a{
+    float: left;
+    display: block;
+    color: #353537;
+    text-align: center;
+    padding: 20px 8% 20px 0px;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: "Swipe Race Demo";
+}
+.item a{
+    float: left;
+    display: block;
+    color: #353537;
+    text-align: center;
+    padding: 20px 40px;
+    font-family: "Impact";
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.search-container {
+    float: right;
+    display: block;
+    color: #353537;
+    text-align: right;
+    padding: 14px 16px;
+    font-size: 20px;
+    width: 400px;
+}
+.search-container input{
+    width: 70%;
+    padding: 10px;
+    background-color: #2f2f31;
+    border: none;
+    font-family: Arial;
+    color: white;
+}
+.search-container input::placeholder{
+    color: white;
+}
+.search-container button{
+    margin-left: -6px;
+    width: 35px;
+    border: none;
+    padding: 9px;
+    font-size: 17px;
+    background-color: #131116;
+    color: #dfdfdf;
+}
+.row{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;   
+}
+.col-1{
+    width: 100%;
+}
+.col-1 img{
+    margin: 120px 0px 0px 0px;
+}
+.col-2{
+    text-align: right;
+    padding: 70px 85px 80px 0px;
+    width: 100%;
+}
+.col-2 h1{
+    font-family: "Bahnschrift";
+    font-size: 70px;
+    font-stretch: semi-condensed;
+    color: #edeeef;
+}
+.col-2 p{
+    font-family: "Bahnschrift";
+    font-size: 23px;
+    color: #edeeef;
+}
+
+/* Responsive CSS */
+@media screen and (max-width: 800px) {
+    .container{
+        background-position: 4% 27%, 100% 85%;
+        background-size: 100%, 100%;
+    }
+    .row{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;   
+    }
+    .col-1{
+        width: 100%;
+    }
+    .col-2{
+        width: 100%;
+        text-align: center;
+        padding: 70px;
+    }
+    .navbar {
+        width: 100%;
+        padding: 0px;
+    }
+    .title a{
+        width: 100%;
+        padding: 20px;
+    }
+    .item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 33.33% 33.33% 33.33%;
+    }
+    .item a{
+        width: 100%;
+        padding: 0px;
+        font-weight: bold;
+    }
+    .search-container {
+        width: 100%;
+        padding: 20px;
+        float: none;
+        text-align: center;
+    }
+    .search-container input{
+        border: .5px solid #2f2f31;
+    }
+    .search-container button{
+        border-bottom: .5px solid #2f2f31;
+        width: 70.1%;
+        margin-left: 0.1px;
+    }
+    .col-1 img{
+        width: 100%;
+    }
+    .col-2 h1{
+        font-size: 40px;
+    }
+    .col-2 p{
+        font-size: 14px;
+    }
+}
