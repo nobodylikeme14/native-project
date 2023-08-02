@@ -1,0 +1,46 @@
+/* Sedikit Custom CSS */
+@font-face { font-family: 'DarkSkyrimFont'; src: url('../fonts/DarksSkyrimFont.ttf'); }
+body{
+    font-family: 'DarkSkyrimFont' !important;
+}
+.bg-littledark{
+    background-color: #151a16;
+}
+a{
+    transition: .5s ease all;
+    text-decoration: none !important;
+}
+h2.titles{
+    color: #47584b;
+    text-transform: uppercase;
+}
+.navigations{
+    height: 100%;
+    padding: 0 0 !important;
+}
+.content2{
+    background-image: url('../img/picture_dark_2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 10px;
+}
+.content3{
+    background-image: url('../img/picture_dark.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 150px 10px;
+}
+.active{
+    border-left: 5px solid #2b352d !important;
+    color: #666f4b;
+}
+footer.footers a{
+    color: #666f4b !important;
+}
+footer.footers a:hover{
+    color: #2e3322 !important;
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}

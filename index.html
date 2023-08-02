@@ -1,0 +1,122 @@
+<!--
+    Nama    : Muhammad Al Fauzy
+    Kelas   : XII-RPL
+    Desain UI Bootstrap 4 di Visual Code Mobile 
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website Games with Bootstrap 4 and Visual Code Mobile</title>
+    <link rel="stylesheet" href="assets/css/custom-style.css">
+    <!-- Bootstrap 4 CSS and Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- Header -->
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="javascript:void(0);">
+                <img src="assets/img/logo.png" class="my-0" width="150">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBar" aria-controls="navBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon text-white"></span>
+            </button>
+        </nav>
+
+        <!-- Content -->
+        <div class="row no-gutters">
+            <div class="col-sm-12 col-md-4 col-lg-2" style="min-height: 0px !important;">
+                <nav class="navbar bg-littledark navigations">
+                    <div class="flex-column collapse show" id="navBar">
+                        <a class="nav-link active" href="javascript:void(0);">Home</a>
+                        <a class="nav-link" href="javascript:void(0);">Download</a>
+                        <a class="nav-link" href="javascript:void(0);">Review</a>
+                        <a class="nav-link" href="javascript:void(0);">Forum</a>
+                        <a class="nav-link" href="javascript:void(0);">About</a>
+                    </div>
+                </nav>
+            </div>
+            <div class="col-sm-12 col-md-8 col-lg-10">
+                <div class="row no-gutters">
+                    <div class="col-md-12">
+                        <img src="assets/img/picture.jpg" width="100%" alt="Skyrim Image">
+                    </div>
+                    <div class="col-md-12 content2 text-center">
+                        <h2 class="titles text-white">All Elder Scroll Games</h2>
+                        <div class="row h-100">
+                            <div class="col-md-3 my-auto">
+                                <img src="assets/img/logo_skyrim.png" width="250">
+                            </div>
+                            <div class="col-md-3 my-auto">
+                                <img src="assets/img/logo_oblivion.png" width="250">
+                            </div>
+                            <div class="col-md-3 my-auto">
+                                <img src="assets/img/logo_morrowind.png" width="250">
+                            </div>
+                            <div class="col-md-3 my-auto">
+                                <img src="assets/img/logo_daggerfall.png" width="250">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 content3 text-center">
+                        <h2 class="titles text-white">About Elder Scroll</h2>
+                        <div class="row h-100">
+                            <div class="col-md-12 my-auto">
+                                <p class="text-white">The Elder Scrolls is a series of action role-playing video games primarily 
+                                    developed by Bethesda Game Studios and published by Bethesda Softworks. 
+                                    The series focuses on free-form gameplay in a detailed open world. Morrowind, 
+                                    Oblivion and Skyrim all won Game of the Year awards from multiple outlets. 
+                                    The series has sold more than 59 million copies worldwide. Within the series' 
+                                    fictional universe, each game takes place on the continent of Tamriel. 
+                                    The setting combines pre-medieval real-world elements, such as a powerful 
+                                    Roman-like Empire, with high fantasy tropes, including limited technology, 
+                                    widespread magic use, and the existence of many mythological creatures. 
+                                    The continent is split into a number of provinces inhabited by humans and 
+                                    popular humanoid fantasy races such as elves, orcs and anthropomorphic animals.
+                                    A common theme in the lore is that a chosen hero rises to defeat an incoming 
+                                    threat, usually a malevolent being or an antagonistic army.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footers bg-light py-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 offset-md-2 text-left">
+                        <a href="javascript:void(0);"><img src="assets/img/logo.png" width="170"></a><br>
+                        <p><strong>
+                            <a href="">Home</a>
+                            • <a href="javascript:void(0);">Download</a>
+                            • <a href="javascript:void(0);">Review</a>
+                            • <a href="javascript:void(0);">Forum</a> 
+                            • <a href="javascript:void(0);">About</a>
+                        </strong></p>
+                        <p><a href="www.elderscrollskyrim.com">www.elderscrollskyrim.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+<!-- Bootstrap 4 JS -->
+<script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script>
+    function isMobile() {
+        return window.innerWidth <= 767;
+    }
+    $(document).ready(function() {
+        if (isMobile()) {
+            $("#navBar").removeClass("show");
+        }
+    });
+</script>
+</html>
