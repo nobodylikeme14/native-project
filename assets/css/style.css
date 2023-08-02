@@ -1,0 +1,436 @@
+/* Reset default margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Define custom CSS variables */
+:root {
+    --main-bg-color: #ed5600;
+    --main-color: #fdfdfd;
+    --button-color-hover: #dd5100;
+    --text-color: #4e4e4e;
+}
+
+/* Custom styling for scrollbars */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #d1d1d1cc;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #bbbbbbcc;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center !important;
+}
+
+/* Navbar styling */
+.navbar {
+    font-family: 'Open Sans';
+    font-size: 1.25rem;
+    background-color: transparent;
+    color: var(--main-bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    transition: 0.5s ease all;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    width: 100%;
+}
+
+.navbar-brand a {
+    display: flex;
+    font-weight: bold;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+.logo {
+    margin: auto 0px auto 10px;
+}
+
+.navbar-links a {
+    font-size: 1.1rem;
+    color: #fff;
+    padding: 0px 15px;
+    margin: 0px 10px;
+    text-decoration: none;
+    transition: 0.5s ease all;
+}
+
+.navbar-links a.active {
+    color: var(--main-bg-color);
+    padding-bottom: 5px;
+}
+
+.navbar-links a.link:hover {
+    color: #dadada;
+}
+
+.navbar-button {
+    display: inline-block;
+    padding: 10px 20px !important;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.5s ease all;
+}
+
+.navbar-button:hover {
+    background-color: var(--button-color-hover);
+}
+
+/* First content section styling */
+.first-content {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, .4) url('../img/lake-2608425_1280.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    color: var(--main-color);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 110px);
+}
+
+.home-lead-1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.lead-line-center {
+    background-color: var(--main-bg-color);
+    display: block;
+    height: 4px;
+    position: relative;
+    width: 280px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 25px;
+}
+
+.lead-line-left {
+    background-color: var(--main-bg-color);
+    display: block;
+    height: 4px;
+    position: relative;
+    width: 280px;
+    left: 0;
+    border-radius: 25px;
+}
+
+.home-lead-2 {
+    font-weight: 400;
+    font-size: 4.5rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+.page-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: 0.5s ease all;
+}
+
+.page-button:hover {
+    background-color: var(--button-color-hover);
+}
+
+/* Second content section styling */
+.second-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 2rem 0;
+    padding: 0px 40px;
+}
+
+.home-lead-3 {
+    font-weight: 500;
+    font-size: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.event-row {
+    margin: 30px 0px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+}
+
+.event-col {
+    margin: 2rem;
+}
+
+.event-title {
+    margin: 20px 0px;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.event-img {
+    border-radius: 15px;
+    width: 100%;
+}
+
+/* Third content section styling */
+.third-content {
+    min-height: 100vh;
+    background: rgba(0, 0, 0, .4) url('../img/backpacker-772991_1280.jpg');
+    background-blend-mode: darken;
+    background-size: cover;
+    background-position: center;
+    color: var(--main-color);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0px 30px;
+}
+
+.third-section {
+    margin: 4rem 0px;
+}
+
+.home-lead-4 {
+    font-weight: 400;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.third-content-text {
+    margin-top: 20px;
+    width: 40%;
+    line-height: 1.5;
+}
+
+/* Fourth content section styling */
+.fourth-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 2rem 0;
+    color: var(--main-color);
+    padding: 0px 40px;
+}
+
+.tour-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tour-col-1 {
+    flex: 40%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tour-col-2 {
+    flex: 60%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.home-lead-5 {
+    font-weight: 400;
+    font-size: 4rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    color: var(--text-color);
+}
+
+.tour-img-container {
+    flex: 50%;
+}
+
+.tour-img {
+    flex-direction: row;
+    padding: 10px;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.fourth-content-text {
+    margin-top: 20px;
+    line-height: 1.5;
+    color: var(--text-color);
+}
+
+/* Footer styling */
+.footer {
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 40px 20px 20px;
+    line-height: 1.3;
+    box-shadow: 0 -.5rem .5rem rgba(0, 0, 0, 0.055);
+}
+
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-col {
+    flex: 300px 1 1;
+    padding: 0px 25px;
+}
+
+.footer-col h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.sosial-media {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sosial-media li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sosial-media li a {
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.sosial-media li a.facebook {
+    background-color: var(--text-color);
+    -webkit-mask: url(../img/facebook.svg) no-repeat center;
+    mask: url(../img/facebook.svg) no-repeat center;
+}
+
+.sosial-media li a.twitter {
+    background-color: var(--text-color);
+    -webkit-mask: url(../img/twitter.svg) no-repeat center;
+    mask: url(../img/twitter.svg) no-repeat center;
+}
+
+.sosial-media li a.instagram {
+    background-color: var(--text-color);
+    -webkit-mask: url(../img/instagram.svg) no-repeat center;
+    mask: url(../img/instagram.svg) no-repeat center;
+}
+
+.sosial-media li a.youtube {
+    background-color: var(--text-color);
+    -webkit-mask: url(../img/youtube.svg) no-repeat center;
+    mask: url(../img/youtube.svg) no-repeat center;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Media query for responsive design */
+@media (max-width: 992px) {
+    .second-content {
+        padding: 0px;
+    }
+    .navbar-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 20px 20px 20px;
+    }
+
+    .navbar-brand {
+        margin-bottom: 20px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .navbar-links a {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .event-row {
+        flex-wrap: wrap;
+    }
+
+    .tour-col-2 {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .third-content-text {
+        width: 100%;
+    }
+
+    .tour-col-2,
+    .footer-col {
+        margin-top: 20px;
+    }
+
+    .home-lead-2,
+    .home-lead-3,
+    .home-lead-4,
+    .home-lead-5 {
+        font-size: 2.8rem;
+    }
+}
