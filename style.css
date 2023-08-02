@@ -1,0 +1,11 @@
+/* Add custom styles for the lucky draw container */
+.draw-container {
+  border: 2px solid #000;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  font-size: 2em;
+  height: 400px; /* Increase the height to accommodate the animation */
+  overflow: hidden;
+}
+
