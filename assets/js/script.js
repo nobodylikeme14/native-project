@@ -1,6 +1,6 @@
 $(document).ready(function() {
     // Load the JSON data using jQuery AJAX
-    $.getJSON('peserta.json', function(data) {
+    $.getJSON('assets/peserta.json', function(data) {
         // Data is loaded successfully, and you can access it inside this function
         // Now you can use the "data" variable to perform the lucky draw
         // For example, you can store it in a global variable for further use
