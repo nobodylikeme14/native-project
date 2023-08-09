@@ -56,6 +56,8 @@ body {
 .carousel-indicators {
     bottom: -7px;
 }
-.nav-item a img {
-    fill: red;
+.form-control:focus {
+    border-color: var(--main-color-hover);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(101, 12, 210, 0.314);
 }
