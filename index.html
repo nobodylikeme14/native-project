@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | SereneCare Hospital</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Open Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" 
+    integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-white py-3">
+        <div class="container-lg">
+            <div class="d-flex w-100">
+                <div class="navbar-brand">
+                    <a href="">
+                        <img src="assets/img/logo.png" class="navbar-brand-img" width="350" alt="Navbar Logo">
+                    </a>
+                </div>
+                <div class="d-flex my-auto ms-auto d-none d-lg-flex">
+                    <div class="info text-end me-3 my-auto">
+                        <div class="mb-1 fw-bold">
+                            <span class="icon-container text-center me-2">
+                                <i class="fas fa-phone text-custom"></i>
+                            </span>(555) 123-4567
+                        </div>
+                        <div class="mb-1 fw-bold">
+                            <span class="icon-container text-center me-2">
+                                <i class="fas fa-envelope text-custom"></i>
+                            </span>info@serenecarehospital.com
+                        </div>
+                    </div>
+                    <div class="appointment my-auto">
+                        <a href="#appointment-form" class="btn btn-primary">
+                            <i class="fa-solid fa-stethoscope me-2"></i>Make an Appointment
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg bg-primary py-3 shadow sticky-top">
+        <div class="container-lg">
+            <span class="navbar-brand mb-0 h1 d-block d-lg-none text-white">
+                <img src="assets/img/logo-icon-only.png" width="75" alt="Navbar Logo Icon">
+            </span>
+            <button class="navbar-toggler ms-auto text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link mx-0 mx-lg-2 link-light fw-bold active" aria-current="page" href="#">
+                            <span class="d-block d-lg-none">Home</span><i class="fas fa-home me-2 d-none d-lg-inline navbar-icons"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-0 mx-lg-2 link-light fw-bold" href="#">
+                            About Us
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-0 mx-lg-2 link-light fw-bold" href="#">
+                            Services
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-0 mx-lg-2 link-light fw-bold" href="#">
+                            FAQ's
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-0 mx-lg-2 link-light fw-bold" href="#">
+                            Blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mx-0 mx-lg-2 link-light fw-bold" href="#">
+                            Contact Us
+                        </a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <div class="d-flex link-light">
+                        <div class="my-auto fw-bold">Follow us on</div>
+                        <div class="d-flex social-media my-auto">
+                            <div class="mx-2">
+                                <a class="link-light" href="">
+                                    <i class="fab fa-facebook navbar-icons"></i>
+                                </a>
+                            </div>
+                            <div class="mx-2">
+                                <a class="link-light" href="">
+                                    <i class="fab fa-linkedin navbar-icons"></i>
+                                </a>
+                            </div>
+                            <div class="mx-2">
+                                <a class="link-light" href="">
+                                    <i class="fab fa-twitter navbar-icons"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- First Row -->
+    <div class="first-row py-4 py-lg-0">
+        <div class="container-lg">
+            <div class="row justify-content-start align-items-center min-vh-100">
+                <div class="col-lg-7 my-5 my-lg-0" data-aos="fade-right">
+                    <div class="h3 fw-bold text-primary">We Are Medical</div>
+                    <div class="display-2 fw-bold mb-4">Miracle Made Daily</div>
+                    <div class="h4">
+                        Serving all people through exemplary health care, education, 
+                        research, and community outreach.
+                    </div>
+                    <div class="mt-5">
+                        <i class="fas fa-circle fa-3x me-2"></i>
+                        <i class="fas fa-circle fa-3x"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- First Row -->
+
+    <!-- Second Row -->
+    <div class="second-row py-5 py-lg-0 bg-primary">
+        <div class="container-lg">
+            <div class="row row-cols-1 row-cols-md-5 justify-content-center align-items-center min-vh-100 g-4">
+                <div class="col text-center" data-aos="fade-up">
+                    <div class="card rounded-4 border-0">
+                        <div class="card-body pb-5">
+                            <i class="fas fa-brain fa-5x mt-5 mb-4"></i>
+                            <div class="card-text h4 fw-bold mb-3">Neurology</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-info fw-bold text-light shadow btn-card px-4">More details</button>
+                </div>
+                <div class="col text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card rounded-4 border-0">
+                        <div class="card-body pb-5">
+                            <i class="fas fa-heart fa-5x mt-5 mb-4"></i>
+                            <div class="card-text h4 fw-bold mb-3">Cardiology</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-info fw-bold text-light shadow btn-card px-4">More details</button>
+                </div>
+                <div class="col text-center" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card rounded-4 border-0">
+                        <div class="card-body pb-5">
+                            <i class="fas fa-lungs fa-5x mt-5 mb-4"></i>
+                            <div class="card-text h4 fw-bold mb-3">Pulmonology</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-info fw-bold text-light shadow btn-card px-4">More details</button>
+                </div>
+                <div class="col text-center" data-aos="fade-up" data-aos-delay="900">
+                    <div class="card rounded-4 border-0">
+                        <div class="card-body pb-5">
+                            <i class="fas fa-tooth fa-5x mt-5 mb-4"></i>
+                            <div class="card-text h4 fw-bold mb-3">Dentistry</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-info fw-bold text-light shadow btn-card px-4">More details</button>
+                </div>
+                <div class="col text-center" data-aos="fade-up" data-aos-delay="1200">
+                    <div class="card rounded-4 border-0">
+                        <div class="card-body pb-5">
+                            <i class="fas fa-virus fa-5x mt-5 mb-4"></i>
+                            <div class="card-text h4 fw-bold mb-3">Virology</div>
+                        </div>
+                    </div>
+                    <button class="btn btn-info fw-bold text-light shadow btn-card px-4">More details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Second Row -->
+
+    <!-- Third Row -->
+    <div class="third-row py-5 py-lg-0">
+        <div class="container-lg">
+            <div class="row row-cols-1 row-cols-md-2 justify-content-center align-items-center min-vh-100 g-lg-5 g-0">
+                <div class="col-auto mb-5 mb-md-0" data-aos="fade-right">
+                    <img src="assets/img/img-content-2.webp" class="img-fluid rounded-4 shadow" alt="Third Row Image">
+                </div>
+                <div class="col-auto" data-aos="fade-up">
+                    <div class="h4 fw-normal">Fast and professional</div>
+                    <div class="display-5 fw-bold mb-5">Why choose medical ?</div>
+                    <div class="row row-cols-1 row-cols-lg-2 mb-3 g-3">
+                        <div class="col-auto d-flex">
+                            <i class="fas fa-circle fa-2x my-auto text-primary me-3"></i>
+                            <span class="h6 fw-bold my-auto">Scheduling patient</span>
+                        </div>
+                        <div class="col-auto d-flex">
+                            <i class="fas fa-circle fa-2x my-auto text-primary me-3"></i>
+                            <span class="h6 fw-bold my-auto">Preparing patient</span>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-2 mb-3 g-3">
+                        <div class="col-auto d-flex">
+                            <i class="fas fa-circle fa-2x my-auto text-primary me-3"></i>
+                            <span class="h6 fw-bold my-auto">Preparing blood</span>
+                        </div>
+                        <div class="col-auto d-flex">
+                            <i class="fas fa-circle fa-2x my-auto text-primary me-3"></i>
+                            <span class="h6 fw-bold my-auto">Patient medications</span>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-2 mb-3 g-3">
+                        <div class="col-auto d-flex">
+                            <i class="fas fa-circle fa-2x my-auto text-primary me-3"></i>
+                            <span class="h6 fw-bold my-auto">Taking and recording</span>
+                        </div>
+                        <div class="col-auto d-flex">
+                            <i class="fas fa-circle fa-2x my-auto text-primary me-3"></i>
+                            <span class="h6 fw-bold my-auto">Helping physicians</span>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-2 mb-3 g-3">
+                        <div class="col-auto d-flex">
+                            <i class="fas fa-circle fa-2x my-auto text-primary me-3"></i>
+                            <span class="h6 fw-bold my-auto">Electronic records</span>
+                        </div>
+                        <div class="col-auto d-flex">
+                            <i class="fas fa-circle fa-2x my-auto text-primary me-3"></i>
+                            <span class="h6 fw-bold my-auto">Information insurance</span>
+                        </div>
+                    </div>
+                    <div class="row row-cols-1 row-cols-lg-2 mb-3 g-3">
+                        <div class="col-auto d-flex">
+                            <i class="fas fa-circle fa-2x my-auto text-primary me-3"></i>
+                            <span class="h6 fw-bold my-auto">Replacement recovery</span>
+                        </div>
+                        <div class="col-auto d-flex">
+                            <i class="fas fa-circle fa-2x my-auto text-primary me-3"></i>
+                            <span class="h6 fw-bold my-auto">Ostomy and continence</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Third Row -->
+
+    <!-- Fourth Row -->
+    <div class="fourth-row py-5 py-lg-0">
+        <div class="container-lg">
+            <div class="row justify-content-center align-items-center min-vh-75 g-lg-5 g-0">
+                <div class="col-12 text-center fourth-row-title position-relative">
+                    <div class="display-5 fw-bold mb-3">We take <span class="text-primary">the time</span> you need</div>
+                    <div class="h4 fw-light">Best hospital with over 15 years of experience</div>
+                </div>
+                <div class="col-12 col-lg-4 p-5 text-center" data-aos="fade-up">
+                    <div class="card border-0 custom-card px-5 py-4 mb-3">
+                        <div class="card-body text-white">
+                            <div class="display-1">99+</div>
+                        </div>
+                    </div>
+                    <div class="h5 text-primary fw-bolder">Expert Personals</div>
+                </div>
+                <div class="col-12 col-lg-4 p-5 text-center" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card border-0 custom-card px-5 py-4 mb-3">
+                        <div class="card-body text-white">
+                            <div class="display-1">15+</div>
+                        </div>
+                    </div>
+                    <div class="h5 text-primary fw-bolder">Years of Experience</div>
+                </div>
+                <div class="col-12 col-lg-4 p-5 text-center" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card border-0 custom-card px-5 py-4 mb-3">
+                        <div class="card-body text-white">
+                            <div class="display-1">20k</div>
+                        </div>
+                    </div>
+                    <div class="h5 text-primary fw-bolder">Satisfy Costumers</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fourth Row -->
+
+    <!-- Fifth Row -->
+    <div class="third-row py-5 py-lg-0">
+        <div class="container-lg">
+            <div class="row row-cols-1 row-cols-md-2 justify-content-center align-items-center min-vh-100 g-lg-5 g-0">
+                <div class="col-auto mb-5 mb-md-0" data-aos="fade-right">
+                    <div class="display-6 fw-bold mb-3">Experience and <span class="text-primary">Reach</span></div>
+                    <div class="h5 fw-light mb-5">The medical reach experience with knowledge</div>
+                    <p class="lh-lg mb-5">
+                        Physicians, scientists and other medical experts dedicate a portion of their clinical 
+                        time to this site, we are in the unique position to give you access to the knowledge 
+                        and experience of Medical Physicians, scientists and other medical experts dedicate a 
+                        portion of their clinical time to this site.
+                    </p>
+                    <button class="btn btn-primary py-3">Read more detail</button>
+                </div>
+                <div class="col-auto" data-aos="fade-in">
+                    <img src="assets/img/img-content-2.webp" class="img-fluid rounded-4 shadow" alt="Fifth Row Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fifth Row -->
+
+    <!-- Sixth Row -->
+    <div class="sixth-row py-5 py-lg-0">
+        <div class="container-fluid">
+            <div class="row align-items-center min-vh-50">
+                <div class="col-12 col-lg-11 bg-primary rounded-end-3">
+                    <div class="container-lg">
+                        <div class="row py-5">
+                            <div class="col-lg-8 m-auto ps-0 ps-md-5" data-aos="fade-in">
+                                <div class="card border-0 bg-transparent py-5">
+                                    <div class="card-body p-0">
+                                        <div class="display-6 fw-bold pb-3 text-white">Experienced doctors in <span class="custom-underline">every specialty</span></div>
+                                        <div class="h5 text-white-custom lh-lg">
+                                            Hospital doctors cover virtually every specialty and subspecialty.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 m-auto position-relative" data-aos="fade-up">
+                                <div class="py-4 px-3 bg-white text-center position-relative rounded-3 shadow sixth-row-appointment">
+                                    <h5 class="fw-bold">Make an Appointment</h5>
+                                    <p class="text-secondary mb-0">Apply now for free</p>
+                                    <a href="" class="stretched-link"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Sixth Row -->
+
+    <!-- Seventh Row -->
+    <div class="seventh-row py-5 py-lg-0">
+        <div class="container-lg py-5 my-5">
+            <div class="row justify-content-center align-items-center min-vh-100 g-lg-5 g-0">
+                <div class="col-lg-4 seventh-row-first-col position-relative mb-4 mb-md-0" data-aos="fade-in">
+                    <div class="h2 fw-bold mb-3">Patient <span class="text-primary">Online</span> Services</div>
+                    <div class="h5 fw-light text-secondary mb-5">Manage all of your appointment</div>
+                    <p class="lh-lg text-secondary mb-5">
+                        Physicians, scientists and other medical experts dedicate their clinical time to
+                        this site, we are in unique position to give you access to the knowledge and 
+                        experience of Medical.
+                    </p>
+                    <button class="btn btn-primary py-3">Read more detail</button>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row row-cols-1 row-cols-lg-2">
+                        <div class="col mt-0 mt-md-4 mb-5" data-aos="fade-up">
+                            <img src="assets/img/img-content-4.webp" class="img-fluid rounded-4 shadow" alt="Seventh Row Image">
+                        </div>
+                        <div class="col" data-aos="fade-down">
+                            <img src="assets/img/img-content-5.webp" class="img-fluid rounded-4 shadow" alt="Seventh Row Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Seventh Row -->
+
+    <!-- Eighth Row -->
+    <div class="eighth-row py-5" id="appointment-form">
+        <div class="container-fluid">
+            <div class="row justify-content-end align-items-center min-vh-50">
+                <div class="col-12 col-lg-10 bg-primary rounded-start-3">
+                    <div class="container-lg py-5">
+                        <div class="row py-5">
+                            <div class="col-lg-5 col-12 my-auto position-relative mb-5 mb-lg-0" data-aos="fade-right">
+                                <div class="position-relative rounded-3 shadow eighth-row-img-container rounded-4">
+                                    <img src="assets/img/img-content-6.webp" class="img-fluid rounded-4 shadow" alt="Eighth Row Image">
+                                </div>
+                            </div>
+                            <div class="col-lg-7 col-12 my-auto eighth-row-second-col position-relative" data-aos="fade-in">
+                                <div class="display-6 text-white fw-bold">Make an Appointment</div>
+                                <div class="h5 text-white-custom lh-lg mb-5">Primary care appointments and some specialties</div>
+                                <form action="">
+                                    <div class="row mb-3">
+                                        <div class="col">
+                                            <label class="form-label text-white-custom">Full name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                        <div class="col">
+                                            <label class="form-label text-white-custom">Phone Number</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label text-white-custom">Date</label>
+                                        <input type="date" class="form-control">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label text-white-custom">Sickness</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                    <div class="mb-4">
+                                        <label class="form-label text-white-custom">Sickness explanation</label>
+                                        <textarea class="form-control" rows="5"></textarea>
+                                    </div>
+                                    <div class="mb-3 text-end">
+                                        <button type="submit" name="submit" class="btn btn-info text-white py-3 px-4">
+                                            Send Request<i class="fas fa-paper-plane ms-2"></i>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Eighth Row -->
+
+    <!-- Ninth Row -->
+    <div class="ninth-row pt-5 py-lg-0 mt-5">
+        <div class="container-lg py-0 py-md-4">
+            <div class="row justify-content-center align-items-center min-vh-100 g-lg-5 g-0">
+                <div class="col-12 text-center fourth-row-title position-relative">
+                    <div class="display-6 fw-bold mb-3">See what our <span class="text-primary">Patient</span> and <span class="text-primary">Visitors</span> said</div>
+                    <div class="h4 fw-light">Our goal is your complete health and wellness</div>
+                </div>
+                <div class="col-lg-9 col-12">
+                    <div id="testimonyCarousel" class="carousel slide" data-bs-theme="dark" data-bs-ride="carousel" data-aos="fade-up">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#testimonyCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#testimonyCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#testimonyCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item py-5 px-0 px-md-5 active">
+                                <div class="card bg-white text-center rounded-3 my-5 mx-0 mx-md-5 border-0 shadow">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <img src="assets/img/profile-img-1.jpg" width="130" class="img-thumbnail border-0 bg-white p-2 testimony-pics shadow" 
+                                        alt="Patient Picture">
+                                    </div>
+                                    <div class="card-body pt-5">
+                                        <div class="d-flex justify-content-center mb-3 mt-5">
+                                            <h5 class="fw-bold text-primary">Robert Johnson</h5>
+                                            <p class="ms-3 text-secondary">Accountant</p>
+                                        </div>
+                                        <p class="pb-5 px-0 px-md-5 fw-bolder text-secondary lh-lg">
+                                            "My recent experience at the hospital was truly remarkable. 
+                                            The staff's dedication to my well-being was evident from the 
+                                            start. Their attentive and caring approach made me feel at 
+                                            ease, and I knew I was in capable hands. The doctors' expertise
+                                            and clear communication were reassuring."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item py-5 px-0 px-md-5">
+                                <div class="card bg-white text-center rounded-3 my-5 mx-0 mx-md-5 border-0 shadow">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <img src="assets/img/profile-img-2.jpg" width="130" class="img-thumbnail border-0 bg-white p-2 testimony-pics shadow" 
+                                        alt="Patient Picture">
+                                    </div>
+                                    <div class="card-body pt-5">
+                                        <div class="d-flex justify-content-center mb-3 mt-5">
+                                            <h5 class="fw-bold text-primary">Michael Clark</h5>
+                                            <p class="ms-3 text-secondary">IT Specialist</p>
+                                        </div>
+                                        <p class="pb-5 px-0 px-md-5 fw-bolder text-secondary lh-lg">
+                                            "I can't thank the hospital team enough for their exceptional 
+                                            care during my stay. Their professionalism and genuine concern 
+                                            for my health were evident in every interaction. From the nurses' 
+                                            tireless support to the doctors' precise treatment, I felt 
+                                            supported and valued throughout my time at the hospital".
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item py-5 px-0 px-md-5">
+                                <div class="card bg-white text-center rounded-3 my-5 mx-0 mx-md-5 border-0 shadow">
+                                    <div class="card-header bg-transparent border-0 position-relative">
+                                        <img src="assets/img/profile-img-3.jpg" width="130" class="img-thumbnail border-0 bg-white p-2 testimony-pics shadow" 
+                                        alt="Patient Picture">
+                                    </div>
+                                    <div class="card-body pt-5">
+                                        <div class="d-flex justify-content-center mb-3 mt-5">
+                                            <h5 class="fw-bold text-primary">William Roberts</h5>
+                                            <p class="ms-3 text-secondary">Marketing Manager</p>
+                                        </div>
+                                        <p class="pb-5 px-0 px-md-5 fw-bolder text-secondary lh-lg">
+                                            "I wanted to share my gratitude for the outstanding care I received 
+                                            at the hospital. The staff's commitment to my well-being went beyond 
+                                            my expectations. Their constant attention to my needs and their efforts 
+                                            to keep me informed about my treatment plan were truly commendable."
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </div>
+    <!-- Ninth Row -->
+
+    <!-- Tenth Row -->
+    <div class="sixth-row py-5 mb-5 py-lg-0">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="custom-carousel">
+                    <div class="custom-carousel-track2">
+                        <div class="custom-slide">
+                            <img src="assets/img/company-logo-1.png" width="200" alt="Company Logo">
+                        </div>
+                        <div class="custom-slide">
+                            <img src="assets/img/company-logo-2.png" width="200" alt="Company Logo">
+                        </div>
+                        <div class="custom-slide">
+                            <img src="assets/img/company-logo-3.png" width="200" alt="Company Logo">
+                        </div>
+                        <div class="custom-slide">
+                            <img src="assets/img/company-logo-4.png" width="200" alt="Company Logo">
+                        </div>
+                        <div class="custom-slide">
+                            <img src="assets/img/company-logo-5.png" width="200" alt="Company Logo">
+                        </div>
+                        <div class="custom-slide">
+                            <img src="assets/img/company-logo-6.png" width="200" alt="Company Logo">
+                        </div>
+                        <div class="custom-slide">
+                            <img src="assets/img/company-logo-7.png" width="200" alt="Company Logo">
+                        </div>
+                        <div class="custom-slide">
+                            <img src="assets/img/company-logo-8.png" width="200" alt="Company Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Tenth Row -->
+
+    <!-- Footer -->
+    <div class="rounded-top-5 shadow-lg">
+        <footer class="container-lg pt-5">
+            <div class="row row-cols-1 row-cols-lg-3">
+                <div class="col mb-4 mb-md-0">
+                    <a href="">
+                        <img src="assets/img/logo.png" class="bg-white rounded-4" width="300" alt="Footer Logo">
+                    </a>
+                    <div class="row justify-content-between px-0 px-md-3 mt-5">
+                        <div class="col">Mon - Fri</div>
+                        <div class="col fw-bolder text-end text-lg-start">08:00 to 23:00</div>    
+                    </div>
+                    <div class="row justify-content-between px-0 px-md-3 mt-3">
+                        <div class="col">Sat - Sun</div>
+                        <div class="col fw-bolder text-end text-lg-start">08:00 to 20:00</div>    
+                    </div>
+                </div>
+                <div class="col mb-4 mb-md-0">
+                    <h4 class="mb-3">Useful Links</h4>
+                    <span class="footer-line mb-3"></span>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-0">
+                            <a class="nav-link link-dark ps-0" href="">
+                                Support Medical
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark ps-0" href="">
+                                Art in Medicine
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark ps-0" href="">
+                                Modern Facilities
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark ps-0" href="">
+                                Simulation Center
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark ps-0" href="">
+                                Our Mission & Values
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark ps-0" href="">
+                                Policies & Procedure
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-dark ps-0" href="">
+                                Health Care Professional
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col mb-4 mb-md-0">
+                    <h4 class="mb-3">Contact Information</h4>
+                    <span class="footer-line mb-3"></span>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a class="nav-link link-dark ps-0 d-flex" href="">
+                                <div class="footer-icon bg-primary text-white d-flex rounded-circle me-2">
+                                    <i class="fas fa-location-dot m-auto"></i>
+                                </div>
+                                <span class="my-auto">
+                                    34 Elm Street Springfield, US
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link link-dark ps-0 d-flex" href="">
+                                <div class="footer-icon bg-primary text-white d-flex rounded-circle me-2">
+                                    <i class="fas fa-phone m-auto"></i>
+                                </div>
+                                <span class="my-auto">
+                                    (555) 123-4567
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link link-dark ps-0 d-flex" href="">
+                                <div class="footer-icon bg-primary text-white d-flex rounded-circle me-2">
+                                    <i class="fas fa-envelope m-auto"></i>
+                                </div>
+                                <span class="my-auto">
+                                    info@serenecarehospital.com
+                                </span>
+                            </a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a class="nav-link link-dark ps-0 d-flex" href="">
+                                <div class="footer-icon bg-primary text-white d-flex rounded-circle me-2">
+                                    <i class="fab fa-linkedin m-auto"></i>
+                                </div>
+                                <span class="my-auto">
+                                    SereneCare Hospital
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 mt-4 small">
+                <p class="my-auto mb-3 mb-md-0">Copyright© 2023 <b><span class="text-primary">Serenecare</span> <span class="text-danger">Hospital</span></b>. All rights reserved.</p>
+                <p class="my-auto">Adversitement | Privacy Policy</p>
+            </div>
+        </footer>
+    </div>
+    <!-- Footer -->
+
+    <!-- Scroll to Top -->
+    <button class="btn btn-primary btn-lg rounded-circle scroll-to-top shadow">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+    <!-- Scroll to Top -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
