@@ -11,13 +11,16 @@
     <div class="d-flex justify-content-center align-items-center min-vh-100">
         <div class="container">
             <h1 class="text-center">Simple Lucky Draw</h1>
-            <div class="row mt-3">
-                <div class="col-6 offset-3">
+            <div class="row row-cols-2 justify-content-center flex-row mt-3">
+                <div class="col-auto">
                     <button class="btn btn-primary btn-block" id="startButton">Start Lucky Draw</button>
                 </div>
+                <div class="col-auto">
+                    <button class="btn btn-danger btn-block" id="resetLuckyDraw">Reset Lucky Draw</button>
+                </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-6 offset-3">
+            <div class="row justify-content-center mt-3">
+                <div class="col-6">
                     <div class="draw-container">
                         <div id="result" class="result">
                             <div id="randomize-peserta"></div>
